@@ -1,0 +1,30 @@
+name: flutter_stripe_web
+description: Stripe sdk for Flutter web
+version: 0.1.0
+homepage: https://github.com/flutter-stripe/flutter_stripe
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_web_plugins:
+    sdk: flutter
+  freezed_annotation:
+  stripe_platform_interface:
+  js:
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^1.0.3
+
+flutter:
+  plugin:
+    platforms:
+      web:
+        pluginClass: WebStripe
+        fileName: flutter_stripe_web.dart
+
